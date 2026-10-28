@@ -5,7 +5,7 @@ import PackageDescription
 
 let package = Package(
     name: "TreeSitterLanguages",
-    platforms: [.iOS(.v14)],
+    platforms: [.iOS(.v18)],
     products: [
         .library(name: "RunestoneLanguageSupport", targets: ["RunestoneLanguageSupport"]),
         .library(name: "TreeSitterBicep", targets: ["TreeSitterBicep"]),
@@ -161,7 +161,7 @@ let package = Package(
         .library(name: "TreeSitterYAMLRunestone", targets: ["TreeSitterYAMLRunestone"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/simonbs/Runestone", revision: "00426ba7f8681a90c1ea0b5c03a0e0bec8cba883")
+        .package(url: "https://github.com/gzqyl/Runestone")
     ],
     targets: [
         .target(
